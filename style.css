@@ -4,6 +4,7 @@
     --load-animation-time: 2.5s;
     --margin: 80px;
     --primary-color: rgb(111, 194, 189);
+    --logo-scale: 5;
 }
 
 html, body{
@@ -325,7 +326,7 @@ footer p{
         position: absolute;
         top: 0;
         left: 0;
-        transform: translate(45vw, 50vh) scale(2);
+        transform: translate(45vw, 50vh) scale(1);
         margin: 0;
         color: var(--primary-color);
     }
@@ -334,7 +335,7 @@ footer p{
         position: absolute;
         top: 0;
         left: 0;
-        transform: translate(45vw, 50vh) scale(5);
+        transform: translate(45vw, 50vh) scale(var(--logo-scale));
         margin: 0;
         color: var(--primary-color);
     }
@@ -384,6 +385,7 @@ footer p{
 @media only screen and (max-width: 900px){
     :root{
         --margin: 30px;
+        --logo-scale: 3;
     }
 
     #prices{
@@ -406,6 +408,9 @@ footer p{
 }
 
 @media only screen and (max-width: 700px){
+    :root{
+        --logo-scale: 2;
+    }
     nav ul{
         flex-direction: column;
         background: white;
