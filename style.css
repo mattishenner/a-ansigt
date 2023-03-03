@@ -3,11 +3,11 @@
 :root{
     --load-animation-time: 2.5s;
     --margin: 80px;
-    --primary-color: rgb(255, 179, 57);
-    --text-color: #eeeeee;
-    --background-color: rgb(20, 20, 20);
-    --card-color: rgb(30, 30, 30);
-    --toned-down-text: #b9b9b9;
+    --primary-color: rgb(0, 0, 0);
+    --text-color: #000000;
+    --background-color: rgb(255, 255, 255);
+    --card-color: rgb(244, 244, 244);
+    --toned-down-text: #4e4e4e;
     --logo-scale: 5;
 }
 
@@ -42,7 +42,7 @@ h4{
     font-size: clamp(1rem, 5vw, 2rem);
     margin-top: 0;
     font-weight: 100;
-    color: var(--primary-color);
+    color: var(--background-color);
 }
 .section-title{
     color: var(--text-color);
@@ -166,7 +166,6 @@ nav ul li:last-of-type{
 #logo img{
     height: 50px;
     width: auto;
-    filter: invert(98%) sepia(7%) saturate(138%) hue-rotate(261deg) brightness(116%) contrast(87%);
 }
 .close-icon .icon-line:first-of-type{
     transform-origin: 7.5px center;
@@ -194,7 +193,7 @@ header{
     animation-direction: forwards;
     animation-delay: calc(var(--load-animation-time) - 0.60s);
     margin-bottom: 0;
-    color: var(--text-color);
+    color: var(--background-color);
 }
 .video-container{
     width: 100vw;
@@ -324,6 +323,9 @@ footer p{
     font-weight: 100;
     margin: 0px;
     line-height: 1.75rem;
+    color: var(--toned-down-text);
+}
+footer h4{
     color: var(--toned-down-text);
 }
 #contact{
