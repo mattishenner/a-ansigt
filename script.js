@@ -17,7 +17,15 @@ bookButton.addEventListener("click", () => {
 /* ********************** | RESPONSIVE MENU | ********************** */
 const menuIcon = document.getElementById("menu-icon");
 const navList = document.getElementById("nav-list");
+const navItems = document.querySelectorAll(".nav-item");
 menuIcon.addEventListener("click", () => {
     navList.classList.toggle("show");
     menuIcon.classList.toggle("close-icon");
+})
+
+navItems.forEach((navItem) => {
+    navItem.addEventListener("click", () => {
+        navList.classList.remove("show");
+        menuIcon.classList.remove("close-icon");
+    })
 })
